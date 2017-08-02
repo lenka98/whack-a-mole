@@ -1,4 +1,4 @@
-package homeWorkAssignment1;
+package whackamole;
 
 public class WhackAMole 
 {
