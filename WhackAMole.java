@@ -1,4 +1,4 @@
-package whackamole;
+package homeWorkAssignment1;
 
 public class WhackAMole 
 {
@@ -68,7 +68,6 @@ public class WhackAMole
 				System.out.println("You WHACKED a mole");
 				moleGrid[x][y] = 'W';
 				molesLeft --;
-				attemptsLeft--;
 				if(isConsecutive)
 				{	
 					multiplier++;

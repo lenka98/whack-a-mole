@@ -1,8 +1,8 @@
-package whackamole;
+package homeWorkAssignment1;
 
 import java.util.Random;
 import java.util.Scanner;
-import whackamole.WhackAMole;
+import homeWorkAssignment1.WhackAMole;
 
 public class Main 
 {
@@ -12,9 +12,11 @@ public class Main
 		
 		System.out.println("\n\n//====================* WELCOME TO WHACK-A-MOLE *=================\\\n");
 		System.out.println("MOLES are PLACED RANDOMLY in a square girded game board (whose size is chosen by you)");
-		System.out.println("Your OBJECTIVE is to WHACK ALL THE MOLES in the grid! You can do so by entering COORDINATES of the place where you want to WHACK");
+		System.out.println("Your OBJECTIVE is to WHACK ALL THE MOLES in the grid!\nYou can do so by entering COORDINATES of the place where you want to WHACK");
 		System.out.println("Note: The indexing starts from 0 not 1 i.e the Coordinate of first element is (0,0)\n");
 		System.out.println("You are given a LIMITED NUMBER OF ATTEMPTS\nIf you WHACK ALL THE MOLES within the given number of attempts you WIN else you LOSE");
+		System.out.println("You get +10 score if you WHACK a mole. -1 if you MISS a mole");
+		System.out.println("You get extra score if you WHACK MOLES CONSECUTIVELY!");
 		System.out.println("You can QUIT at any point in the game by entering -1 as both x and y Co-Ordinate\n");
 		System.out.println("!!! ---------- !! HAVE A GOOD GAME !! --------- !!\n\n");
 		
@@ -55,9 +57,9 @@ public class Main
 		while (true)
 		{	
 			System.out.println("\nEnter the co-ordinates where you want to whack (you have " + newGame.getAttemptsLeft() + " attempts) (Enter -1,-1 coordinate to exit): ");
-			System.out.println("Enter x-coordinate(0-" + (newGame.getGridDimension() - 1) + "): ");
-			xAxis = input.nextInt();
 			System.out.println("Enter y-coordinate(0-" + (newGame.getGridDimension() - 1) + "): ");
+			xAxis = input.nextInt();
+			System.out.println("Enter x-coordinate(0-" + (newGame.getGridDimension() - 1) + "): ");
 			yAxis = input.nextInt();
 			System.out.println();
 			
