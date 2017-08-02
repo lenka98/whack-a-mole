@@ -1,8 +1,8 @@
-package homeWorkAssignment1;
+package whackamole;
 
 import java.util.Random;
 import java.util.Scanner;
-import homeWorkAssignment1.WhackAMole;
+import whackamole.WhackAMole;
 
 public class Main 
 {
